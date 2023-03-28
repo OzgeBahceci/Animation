@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* background-image: linear-gradient(to top, #ffffff, #eaf1ff, #c6e7ff, #92dfff, #4bd8f0); */
+}
+
+.bulut {
+    width: 100%;
+    height: 50px;
+}
+
+.bulut-sol {
+    border-radius: 50px 15px;
+    width: 250px;
+    height: 10px;
+    animation: sagdanGelen 20s infinite linear;
+    position: absolute;
+    left: 250px;
+    top: 30px
+}
+
+.bulut-sag {
+    width: 250px;
+    height: 10px;
+    animation: soldanGelen 20s infinite linear;
+    position: absolute;
+    left: 750px;
+    top: 50px
+}
+
+.gunes {
+    width: 150px;
+    height: 150px;
+    animation: don 8s infinite linear;
+    position: absolute;
+    left: 530px;
+    top: 0px
+}
+
+.kus {
+    width: 100%;
+    height: 50px;
+}
+
+.kus-1 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 830px;
+    top: 0px;
+    animation: kus-uc-1 3s infinite linear;
+
+}
+
+.kus-2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 830px;
+    top: 0px;
+    animation: kus-uc-2 5s infinite linear;
+
+}
+
+.arac {
+    width: 100%;
+    height: 150px;
+}
+
+.araba {
+    width: 250px;
+    /* height: 250px;     */
+    animation: sagdanGelen 8s infinite linear;
+    position: absolute;
+    left: 640px;
+    bottom: 30px;
+}
+
+.tekerlek {
+    width: 30px;
+    height: 50px;
+    animation: sagdanGelen-tekerlek-1 8s infinite linear;
+    position: absolute;
+    left: 660px;
+    bottom: 30px;
+}
+
+.tekerlek-2 {
+    width: 30px;
+    height: 30px;
+    animation: sagdanGelen-tekerlek-2 8s infinite linear;
+    position: absolute;
+    left: 800px;
+    bottom: 30px;
+
+}
+
+.ev {
+    width: 80px;
+    /* height: 250px;     */
+    position: absolute;
+    left: 140px;
+    bottom: 30px;
+}
+
+.ucgen {
+
+    border-bottom: 90px solid brown;
+    border-left: 40px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+.kare {
+    width: 100px;
+    height: 100px;
+    background: brown;
+}
+
+.dikdortgen {
+    width: 20px;
+    height: 50px;
+    background: brown;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 40px;
+
+}
+
+.duman {
+    width: 20px;
+    height: 50px;
+    border-radius: 50%;
+    background: darkgray;
+    position: absolute;
+    margin-left: 70px;
+    margin-top: 40px;
+    animation: duman 2s infinite linear;
+
+}
+
+.image-fluid {
+    width: 100%;
+    border-radius: 75px 75px 0px 0px;
+}
+
+.image-fluid-telerlek {
+    width: 60px;
+    border-radius: 75px;
+}
+
+@keyframes soldanGelen {
+    0% {
+        left: 400px;
+    }
+
+    50% {
+        left: 50px;
+    }
+
+    100% {
+        left: 400px;
+    }
+}
+
+@keyframes sagdanGelen {
+    0% {
+        left: 500px;
+        bottom: 20px;
+    }
+
+    50% {
+        left: 850px;
+        bottom: 20px;
+    }
+
+    100% {
+        left: 500px;
+        bottom: 20px;
+    }
+}
+
+@keyframes sagdanGelen-tekerlek-1 {
+    0% {
+        left: 530px;
+        float: left;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        left: 880px;
+        float: left;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 530px;
+        float: left;
+    }
+}
+
+@keyframes sagdanGelen-tekerlek-2 {
+    0% {
+        left: 670px;
+        float: left;
+        bottom: 20px;
+    }
+
+    50% {
+        transform: rotate(360deg);
+        left: 1020px;
+        float: left;
+
+
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        left: 670px;
+        float: left;
+
+    }
+}
+
+
+@keyframes don {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes kus-uc-1 {
+    100% {
+        left: 10px;
+        top: 0px;
+    }
+
+    90% {
+        left: 50px;
+        top: 10px;
+    }
+
+    80% {
+        left: 100px;
+        top: 20px;
+    }
+
+    70% {
+        left: 200px;
+        top: 30px;
+    }
+
+    60% {
+        left: 300px;
+        top: 40px;
+    }
+
+    50% {
+        left: 400px;
+        top: 40px;
+    }
+
+    40% {
+        left: 500px;
+        top: 60px;
+    }
+
+    30% {
+        left: 600px;
+        top: 80px;
+    }
+
+    20% {
+        left: 700px;
+        top: 100px;
+    }
+
+    10% {
+        left: 800px;
+        top: 140px;
+    }
+
+    0% {
+        left: 900px;
+        top: 200px;
+    }
+}
+
+@keyframes kus-uc-2 {
+    100% {
+        left: 10px
+    }
+
+    90% {
+        left: 50px
+    }
+
+    80% {
+        left: 100px
+    }
+
+    70% {
+        left: 200px
+    }
+
+    60% {
+        left: 300px
+    }
+
+    50% {
+        left: 400px
+    }
+
+    40% {
+        left: 500px
+    }
+
+    30% {
+        left: 600px
+    }
+
+    20% {
+        left: 700px
+    }
+
+    10% {
+        left: 800px
+    }
+
+    0% {
+        left: 900px
+    }
+
+}
+
+@keyframes duman {
+    0% {
+        bottom: 130px;
+        width: 20px;
+        height: 50px;
+        background-color: gray;
+    }
+
+
+    40% {
+        bottom: 400px;
+        width: 200px;
+        height: 150px;
+        background-color: lightgray;
+    }
+
+    60% {
+        bottom: 600px;
+        width: 400px;
+        height: 150px;
+        background-color: white;
+    }
+
+    100% {
+        bottom: 900px;
+        width: 600px;
+        height: 250px;
+        background-color: white;
+    }
+
+}
